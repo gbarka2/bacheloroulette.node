@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
-const PORT = 3000
+const {PORT = 3000} = process.env
+// const PORT = process.env.PORT
 app.listen(PORT, () => {
   console.log(`Express server listening on port ${PORT}`)
 })
